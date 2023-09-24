@@ -176,6 +176,7 @@ body{
     background-color: #fff;
     border-bottom: 1px solid var(--black-d9);
     align-items: center;
+    height: 64px;
 }
 
 .payoutNav{
@@ -289,19 +290,29 @@ body{
     color: var(--heading-black);
 }
 
-#time{
+.timeOption{
     border: 1px solid var(--black-d9);
-    color: var(--light-grey);
-    border-radius: 1px;
-    word-spacing: 2px;
-    letter-spacing: 0.5px;
+    background-color: #fff;
     padding: 6px 14px;
+    width: 137px;
+    border-radius: 4px;
+}
+
+#time{
+    border: none;
+    color: var(--light-grey);
+    /* word-spacing: 2px; */
+    /* letter-spacing: 0.5px; */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .overviewLowerContainer{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    gap: 20px;
 }
 
 .card{
@@ -432,11 +443,12 @@ body{
 }
 
 .tableMainContainer{
-    background-color: #fff;
+    background-color: #FFF;
     padding: 12px 12px 8px 12px;
     display: flex;
     flex-direction: column;
     gap: 12px;
+    border-radius: 8px;
 }
 
 .searchSortContainer{
@@ -532,6 +544,9 @@ td{
     line-height: 20px;
     color: var(--light-grey);
     border-bottom: 1px solid var(--black-d9);
+}
+tr{
+    /* border: 1px solid red; */
 }
 table tr:last-child td{
     border: none;
